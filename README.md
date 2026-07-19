@@ -8,6 +8,8 @@ Target project: `emtygujjgdhsorkgmwjn`
 
 The repository contains:
 
+- A bilingual, responsive early-access experience with an interactive fictional product preview.
+- A browser form wired to the prepared Supabase Edge Function endpoint with honest failure handling.
 - A protected `early_access` table migration.
 - A public Supabase Edge Function that performs validation, consent enforcement, spam filtering and server-side storage.
 - No Supabase secret or service-role key in source control.
@@ -23,3 +25,9 @@ The repository contains:
 The function endpoint will be:
 
 `https://emtygujjgdhsorkgmwjn.supabase.co/functions/v1/early-access`
+
+## Local preview
+
+Serve the repository with any static HTTP server. The product preview works without backend access. Early-access submissions succeed only after the migration and Edge Function are deployed and the page origin is included in `ALLOWED_ORIGINS`.
+
+See [ROADMAP.md](ROADMAP.md) for verified progress and next milestones.
